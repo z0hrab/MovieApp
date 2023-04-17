@@ -24,7 +24,7 @@
             </objects>
             <point key="canvasLocation" x="-112" y="253"/>
         </scene>
-        <!--Item-->
+        <!--Itemn 3-->
         <scene sceneID="HdZ-9N-nBn">
             <objects>
                 <viewController id="IQ6-Ke-hu9" sceneMemberID="viewController">
@@ -34,13 +34,13 @@
                         <viewLayoutGuide key="safeArea" id="PbC-8j-Ic8"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="TBZ-NC-SCW"/>
+                    <tabBarItem key="tabBarItem" title="Itemn 3" id="TBZ-NC-SCW"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Isp-jU-n9t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-112" y="1070"/>
         </scene>
-        <!--Item-->
+        <!--Item 4-->
         <scene sceneID="ovg-vm-rgo">
             <objects>
                 <viewController id="nf1-nY-Uik" sceneMemberID="viewController">
@@ -50,7 +50,7 @@
                         <viewLayoutGuide key="safeArea" id="qJk-H4-Wos"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="2MO-vY-rbJ"/>
+                    <tabBarItem key="tabBarItem" title="Item 4" id="2MO-vY-rbJ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RLJ-eX-pe0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -73,11 +73,11 @@
             </objects>
             <point key="canvasLocation" x="831" y="-477"/>
         </scene>
-        <!--Item-->
+        <!--HOME-->
         <scene sceneID="nTB-e0-5LR">
             <objects>
                 <navigationController id="6NM-ic-0u5" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="vjL-mR-bpm"/>
+                    <tabBarItem key="tabBarItem" title="HOME" id="vjL-mR-bpm"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="0LV-1b-5x8">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

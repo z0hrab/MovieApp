@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 class HomeViewModel {
     
     var movieList: [Movie] = [Movie]()
@@ -19,8 +18,7 @@ class HomeViewModel {
             if let errorMessage = errorMessage {
                 print(errorMessage)
             } else if let data = data {
-                // self.movieList = data // sets the received data in the array
-                self.movieList.append(data)
+                self.movieList.append(data) // sets the received data in the array
                 self.successCallback?()
             }
         }

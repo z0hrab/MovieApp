@@ -27,10 +27,14 @@ class HomeController: UIViewController {
             // will reload the collection view
             self.movieList.append(contentsOf: self.homeViewModel.movieList)
             print("---")
-            print(self.movieList.first?.results.first?.originalTitle)
+            print(self.movieList.first?.results.first?.originalTitle ?? "")
             print("---")
         }
     }
-   
     
 }
+
+extension HomeController {
+    
+}
+

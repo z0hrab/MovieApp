@@ -10,19 +10,17 @@ import Foundation
 
 class HomeViewModel {
     
-    var postList: [Post] = [Post]()
-
-    
+    var movieList: [Movie] = [Movie]()
     var successCallback: (() -> Void)?
     
     func getPosts() {
-        NetworkManager.shared.request(model: [Post].self, fullURL: NetworkHelper.shared.putURL(path: "posts") ) { data, errorMessage in
+        NetworkManager.shared.request(model: Movie.self, fullURL: NetworkHelper.shared.putURL(path: "movie/popular") ) { data, errorMessage in
             
             if let errorMessage = errorMessage {
                 print(errorMessage)
             } else if let data = data {
-                // print(data.first?.title) // testing
-                self.postList = data
+                // self.movieList = data // sets the received data in the array
+                self.movieList.append(data)
                 self.successCallback?()
             }
         }

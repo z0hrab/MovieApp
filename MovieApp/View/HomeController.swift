@@ -10,7 +10,7 @@ import Alamofire
 
 class HomeController: UIViewController {
     
-    var postList: [Post] = [Post]()
+    var movieList: [Movie] = [Movie]()
     var homeViewModel = HomeViewModel()
 
     
@@ -25,9 +25,10 @@ class HomeController: UIViewController {
         
         self.homeViewModel.successCallback = {
             // will reload the collection view
-            self.postList.append(contentsOf: self.homeViewModel.postList)
+            self.movieList.append(contentsOf: self.homeViewModel.movieList)
             print("---")
-            print(self.postList[0].title!)
+            print(self.movieList.first?.results.first?.originalTitle)
+            print("---")
         }
     }
    

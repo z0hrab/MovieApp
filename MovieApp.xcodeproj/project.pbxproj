@@ -12,7 +12,11 @@
 		95865D8F29E5364A00101DE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95865D8D29E5364A00101DE0 /* Main.storyboard */; };
 		95865D9129E5364A00101DE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95865D9029E5364A00101DE0 /* Assets.xcassets */; };
 		95865D9429E5364A00101DE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95865D9229E5364A00101DE0 /* LaunchScreen.storyboard */; };
+		95B7183429E973C40038E901 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B7183329E973C40038E901 /* Post.swift */; };
+		95B7183629E981980038E901 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B7183529E981980038E901 /* NetworkHelper.swift */; };
 		95BCC2B229E5392700ED728D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BCC2B129E5392700ED728D /* NetworkManager.swift */; };
+		95BCC2B729E54B8500ED728D /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BCC2B629E54B8500ED728D /* HomeController.swift */; };
+		95BCC2B929E54BAC00ED728D /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BCC2B829E54BAC00ED728D /* HomeViewModel.swift */; };
 		B254135F1430A30A117FFFC0 /* Pods_MovieApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2B98B5854E618187EAF9867 /* Pods_MovieApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,7 +29,11 @@
 		95865D9029E5364A00101DE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95865D9329E5364A00101DE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		95865D9529E5364A00101DE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95B7183329E973C40038E901 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		95B7183529E981980038E901 /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
 		95BCC2B129E5392700ED728D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		95BCC2B629E54B8500ED728D /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		95BCC2B829E54BAC00ED728D /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		9BE10707709A2C16E6ECEFA3 /* Pods-MovieApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieApp.debug.xcconfig"; path = "Target Support Files/Pods-MovieApp/Pods-MovieApp.debug.xcconfig"; sourceTree = "<group>"; };
 		A2B98B5854E618187EAF9867 /* Pods_MovieApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -98,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				95BCC2B129E5392700ED728D /* NetworkManager.swift */,
+				95B7183529E981980038E901 /* NetworkHelper.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -105,6 +114,7 @@
 		95BCC2B329E5397900ED728D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				95B7183329E973C40038E901 /* Post.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -112,6 +122,7 @@
 		95BCC2B429E5398800ED728D /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				95BCC2B829E54BAC00ED728D /* HomeViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -119,6 +130,7 @@
 		95BCC2B529E539B500ED728D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				95BCC2B629E54B8500ED728D /* HomeController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -238,8 +250,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95B7183629E981980038E901 /* NetworkHelper.swift in Sources */,
+				95BCC2B729E54B8500ED728D /* HomeController.swift in Sources */,
 				95BCC2B229E5392700ED728D /* NetworkManager.swift in Sources */,
 				95865D8829E5364A00101DE0 /* AppDelegate.swift in Sources */,
+				95B7183429E973C40038E901 /* Post.swift in Sources */,
+				95BCC2B929E54BAC00ED728D /* HomeViewModel.swift in Sources */,
 				95865D8A29E5364A00101DE0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

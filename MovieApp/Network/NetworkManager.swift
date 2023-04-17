@@ -10,29 +10,30 @@ import Alamofire
 
 class NetworkManager {
     
-    static let baseURL = "http://google.com/"
-    
-    static func request(endPoint: String,
-                 method: HTTPMethod = .get,
-                 parameters: Parameters? = nil,
-                 encoding: ParameterEncoding = URLEncoding.default,
-                 header: HTTPHeaders? = nil,
-                 completion: @escaping((Data?, String?)->(Void))
+    static let shared = NetworkManager()
+
+    func request<T: Codable>(model: T.Type,
+                             fullURL: String,
+                             method: HTTPMethod = .get,
+                             parameters: Parameters? = nil,
+                             encoding: ParameterEncoding = URLEncoding.default,
+                             header: HTTPHeaders? = nil,
+                             completion: @escaping((T?, String?)->(Void))
     ) {
         
-        AF.request("\(endPoint)",
+        AF.request(fullURL,
                    method: method,
                    parameters: parameters,
                    encoding: encoding,
                    headers: header
-        ).responseData { response in
+        ).responseDecodable(of: T.self) { response in
             
             switch response.result {
-                case .success(let data):
-                    completion(data, nil)
-                case .failure(let error):
-                    completion(nil, error.localizedDescription)
-                }
+            case .success(let data):
+                completion(data, nil)
+            case .failure(let error):
+                completion(nil, error.localizedDescription)
+            }
             
         } // AF.request() ends here
         

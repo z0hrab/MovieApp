@@ -6,11 +6,9 @@
 //
 
 import UIKit
-import Alamofire
 
 class HomeController: UIViewController {
     
-    var movieList: [Movie] = [Movie]()
     var homeViewModel = HomeViewModel()
     
     @IBOutlet var categoryCollection: UICollectionView!
@@ -24,23 +22,25 @@ class HomeController: UIViewController {
         self.homeViewModel.getMovies()
         
         self.homeViewModel.successCallback = {
-            // will reload the collection view
-            self.movieList.append(contentsOf: self.homeViewModel.movieList)
-            print("---")
-            print(self.movieList.first?.results.first?.originalTitle ?? "")
-            print("---")
+            self.categoryCollection.reloadData() // will reload the categoryCollection view
+//            print("---")
+//            print(self.homeViewModel.movieList.first?.title)
+//            print("---")
         }
     }
     
 }
 
 extension HomeController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         1
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CategoryCell", for: indexPath) as! CategoryCell
+        cell.movieList.append(contentsOf: self.homeViewModel.movieList)
+        cell.movieCollection.reloadData()
         return cell
     }
     

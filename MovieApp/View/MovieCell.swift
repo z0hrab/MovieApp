@@ -12,5 +12,10 @@ class MovieCell: UICollectionViewCell {
     @IBOutlet var movieImage: UIImageView!
     @IBOutlet var movieTitle: UILabel!
     
+    func configureMovieCell(movie: Result) {
+        self.movieTitle.text = movie.title
+        self.movieImage.loadImage(imagePath: movie.posterPath)
+        self.backgroundColor = .red
+    }
     
 }

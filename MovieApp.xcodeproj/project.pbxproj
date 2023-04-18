@@ -15,6 +15,7 @@
 		95865D9129E5364A00101DE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95865D9029E5364A00101DE0 /* Assets.xcassets */; };
 		95865D9429E5364A00101DE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95865D9229E5364A00101DE0 /* LaunchScreen.storyboard */; };
 		95B7183629E981980038E901 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B7183529E981980038E901 /* NetworkHelper.swift */; };
+		95B8426A29EEB7E1000DFE68 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B8426929EEB7E1000DFE68 /* UIImageView+Extension.swift */; };
 		95BCC2B229E5392700ED728D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BCC2B129E5392700ED728D /* NetworkManager.swift */; };
 		95BCC2B729E54B8500ED728D /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BCC2B629E54B8500ED728D /* HomeController.swift */; };
 		95BCC2B929E54BAC00ED728D /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BCC2B829E54BAC00ED728D /* HomeViewModel.swift */; };
@@ -38,6 +39,7 @@
 		95865D9329E5364A00101DE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		95865D9529E5364A00101DE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		95B7183529E981980038E901 /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
+		95B8426929EEB7E1000DFE68 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		95BCC2B129E5392700ED728D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		95BCC2B629E54B8500ED728D /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		95BCC2B829E54BAC00ED728D /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
@@ -115,6 +117,14 @@
 			path = MovieApp;
 			sourceTree = "<group>";
 		};
+		95B8426B29EEB9CE000DFE68 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				95B8426929EEB7E1000DFE68 /* UIImageView+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		95BCC2B029E538FE00ED728D /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -164,6 +174,7 @@
 		95E44F4E29ED8B4200348326 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				95B8426B29EEB9CE000DFE68 /* Extensions */,
 				95E44F4B29ED88C900348326 /* Fonts */,
 			);
 			path = Helper;
@@ -288,6 +299,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95B8426A29EEB7E1000DFE68 /* UIImageView+Extension.swift in Sources */,
 				95B7183629E981980038E901 /* NetworkHelper.swift in Sources */,
 				95BCC2B729E54B8500ED728D /* HomeController.swift in Sources */,
 				9547D9C629EE752B0005BB30 /* MovieCell.swift in Sources */,

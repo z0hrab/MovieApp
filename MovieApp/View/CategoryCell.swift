@@ -6,20 +6,23 @@
 //
 
 import UIKit
+import SDWebImage
 
 class CategoryCell: UICollectionViewCell {
     @IBOutlet var movieCollection: UICollectionView!
-    
+    var movieList: [Result] = [Result]()
+        
 }
 
 
 extension CategoryCell: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        5
+        self.movieList.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MovieCell", for: indexPath) as! MovieCell
+        cell.configureMovieCell(movie: self.movieList[indexPath.row])
         return cell
     }
     

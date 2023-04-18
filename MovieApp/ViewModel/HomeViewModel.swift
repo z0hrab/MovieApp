@@ -9,7 +9,7 @@ import Foundation
 
 class HomeViewModel {
     
-    var movieList: [Movie] = [Movie]()
+    var movieList: [Result] = [Result]()
     var successCallback: (() -> Void)?
     
     func getMovies() {
@@ -18,7 +18,7 @@ class HomeViewModel {
             if let errorMessage = errorMessage {
                 print(errorMessage)
             } else if let data = data {
-                self.movieList.append(data) // sets the received data in the array
+                self.movieList.append(contentsOf: data.results) // sets the received data into the array
                 self.successCallback?()
             }
         }

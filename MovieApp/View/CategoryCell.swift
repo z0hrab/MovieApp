@@ -6,14 +6,12 @@
 //
 
 import UIKit
-import SDWebImage
 
 class CategoryCell: UICollectionViewCell {
     @IBOutlet var movieCollection: UICollectionView!
     var movieList: [Result] = [Result]()
         
 }
-
 
 extension CategoryCell: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

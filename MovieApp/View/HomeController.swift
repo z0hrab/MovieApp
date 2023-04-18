@@ -23,9 +23,6 @@ class HomeController: UIViewController {
         
         self.homeViewModel.successCallback = {
             self.categoryCollection.reloadData() // will reload the categoryCollection view
-//            print("---")
-//            print(self.homeViewModel.movieList.first?.title)
-//            print("---")
         }
     }
     

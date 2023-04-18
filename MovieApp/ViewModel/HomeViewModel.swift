@@ -12,7 +12,7 @@ class HomeViewModel {
     var movieList: [Movie] = [Movie]()
     var successCallback: (() -> Void)?
     
-    func getPosts() {
+    func getMovies() {
         NetworkManager.shared.request(model: Movie.self, fullURL: NetworkHelper.shared.putURL(path: "movie/popular") ) { data, errorMessage in
             
             if let errorMessage = errorMessage {

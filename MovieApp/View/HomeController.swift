@@ -19,10 +19,13 @@ class HomeController: UIViewController {
     }
     
     func configHomeController() {
-        self.homeViewModel.getMovies()
+        self.homeViewModel.getPopularMovies()
+        self.homeViewModel.getTopRatedMovies()
+        self.homeViewModel.getUpcomingMovies()
         
         self.homeViewModel.successCallback = {
             self.categoryCollection.reloadData() // will reload the categoryCollection view
+            print(self.homeViewModel.categoryList.count) // testing
         }
     }
     
@@ -31,16 +34,16 @@ class HomeController: UIViewController {
 extension HomeController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        1
+        self.homeViewModel.categoryList.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CategoryCell", for: indexPath) as! CategoryCell
-        cell.movieList.append(contentsOf: self.homeViewModel.movieList)
+        // cell.movieList.append(contentsOf: self.homeViewModel.movieList)
+        cell.movieList.append(contentsOf: self.homeViewModel.categoryList[indexPath.item].movieList)
         cell.movieCollection.reloadData()
         return cell
     }
-    
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         CGSize(width: self.categoryCollection.frame.width, height: 318)

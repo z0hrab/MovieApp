@@ -165,9 +165,9 @@
                                                 <constraint firstItem="PII-T4-JK7" firstAttribute="leading" secondItem="Cny-2P-gGs" secondAttribute="leading" id="jmI-vQ-TM7"/>
                                             </constraints>
                                         </collectionViewCellContentView>
-                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
                                         <size key="customSize" width="393" height="318"/>
                                         <connections>
+                                            <outlet property="categoryNameTitle" destination="Lu1-7K-FQf" id="uPb-3m-bGo"/>
                                             <outlet property="movieCollection" destination="PII-T4-JK7" id="fOd-Qu-XCv"/>
                                         </connections>
                                     </collectionViewCell>
@@ -253,9 +253,6 @@
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

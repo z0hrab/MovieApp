@@ -40,6 +40,7 @@ extension HomeController: UICollectionViewDelegate, UICollectionViewDataSource, 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CategoryCell", for: indexPath) as! CategoryCell
         // cell.movieList.append(contentsOf: self.homeViewModel.movieList)
+        cell.categoryNameTitle.text = self.homeViewModel.categoryList[indexPath.item].categoryName
         cell.movieList.append(contentsOf: self.homeViewModel.categoryList[indexPath.item].movieList)
         cell.movieCollection.reloadData()
         return cell

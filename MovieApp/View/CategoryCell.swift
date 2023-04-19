@@ -9,8 +9,9 @@ import UIKit
 
 class CategoryCell: UICollectionViewCell {
     @IBOutlet var movieCollection: UICollectionView!
+    @IBOutlet var categoryNameTitle: UILabel!
+    
     var movieList: [Result] = [Result]()
-        
 }
 
 extension CategoryCell: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{

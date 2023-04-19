@@ -15,8 +15,7 @@ class MovieCell: UICollectionViewCell {
     func configureMovieCell(movie: Result) {
         self.movieTitle.text = movie.title
         self.movieImage.loadImage(imagePath: movie.posterPath)
-        self.movieImage.layer.cornerRadius = 16
-        // self.backgroundColor = .red
+        self.movieImage.layer.cornerRadius = 18
     }
     
 }

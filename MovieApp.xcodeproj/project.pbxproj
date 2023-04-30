@@ -211,9 +211,9 @@
 		95FE8B7D29FE83DA0056B006 /* People */ = {
 			isa = PBXGroup;
 			children = (
-				95FE8B8829FEA4BA0056B006 /* People.swift */,
-				95FE8B7E29FE84410056B006 /* PeopleController.swift */,
-				95FE8B8029FE845C0056B006 /* PeopleViewModel.swift */,
+				95FE8B8A29FED0AE0056B006 /* Model */,
+				95FE8B8B29FED0B40056B006 /* View */,
+				95FE8B8C29FED0C10056B006 /* ViewModel */,
 			);
 			path = People;
 			sourceTree = "<group>";
@@ -233,6 +233,30 @@
 				95FE8B8529FE91BF0056B006 /* TopImageBottomLabelCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		95FE8B8A29FED0AE0056B006 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				95FE8B8829FEA4BA0056B006 /* People.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		95FE8B8B29FED0B40056B006 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				95FE8B7E29FE84410056B006 /* PeopleController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		95FE8B8C29FED0C10056B006 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				95FE8B8029FE845C0056B006 /* PeopleViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

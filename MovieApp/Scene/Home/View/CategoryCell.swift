@@ -11,7 +11,14 @@ class CategoryCell: UICollectionViewCell {
     @IBOutlet var movieCollection: UICollectionView!
     @IBOutlet var categoryNameTitle: UILabel!
     
-    var movieList: [Result] = [Result]()
+    let cellID = "\(TopImageBottomLabelCell.self)"
+    var movieList: [MovieResult] = [MovieResult]()
+    
+    override func layoutSubviews() {
+        let nibCell = UINib(nibName: self.cellID, bundle: nil)
+        self.movieCollection.register(nibCell, forCellWithReuseIdentifier: self.cellID)
+    }
+    
 }
 
 extension CategoryCell: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
@@ -20,11 +27,10 @@ extension CategoryCell: UICollectionViewDelegate, UICollectionViewDataSource, UI
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MovieCell", for: indexPath) as! MovieCell
-        cell.configureMovieCell(movie: self.movieList[indexPath.row])
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: self.cellID, for: indexPath) as! TopImageBottomLabelCell
+        cell.config(data: self.movieList[indexPath.row])
         return cell
     }
-    
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         CGSize(width: 167, height: self.movieCollection.frame.height)

@@ -9,5 +9,5 @@ import Foundation
 
 struct Category {
     var categoryName: String?
-    var movieList: [Result] = [Result]()
+    var movieList: [MovieResult] = [MovieResult]()
 }

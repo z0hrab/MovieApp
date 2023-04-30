@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9547D9C629EE752B0005BB30 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9547D9C529EE752B0005BB30 /* MovieCell.swift */; };
 		95744D4E29EDCF96006A6DFB /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95744D4D29EDCF96006A6DFB /* CategoryCell.swift */; };
 		95865D8829E5364A00101DE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95865D8729E5364A00101DE0 /* AppDelegate.swift */; };
 		95865D8A29E5364A00101DE0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95865D8929E5364A00101DE0 /* SceneDelegate.swift */; };
@@ -25,12 +24,16 @@
 		95E44F5429ED8B9300348326 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95E44F5029ED8B9300348326 /* Poppins-SemiBold.ttf */; };
 		95E44F5529ED8B9300348326 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95E44F5129ED8B9300348326 /* Poppins-Regular.ttf */; };
 		95E44F5629ED8B9300348326 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95E44F5229ED8B9300348326 /* Poppins-Medium.ttf */; };
+		95FE8B7F29FE84410056B006 /* PeopleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FE8B7E29FE84410056B006 /* PeopleController.swift */; };
+		95FE8B8129FE845C0056B006 /* PeopleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FE8B8029FE845C0056B006 /* PeopleViewModel.swift */; };
+		95FE8B8629FE91BF0056B006 /* TopImageBottomLabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FE8B8429FE91BF0056B006 /* TopImageBottomLabelCell.swift */; };
+		95FE8B8729FE91BF0056B006 /* TopImageBottomLabelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95FE8B8529FE91BF0056B006 /* TopImageBottomLabelCell.xib */; };
+		95FE8B8929FEA4BA0056B006 /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FE8B8829FEA4BA0056B006 /* People.swift */; };
 		B254135F1430A30A117FFFC0 /* Pods_MovieApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2B98B5854E618187EAF9867 /* Pods_MovieApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		049E5201C11717EF4EF6C9BA /* Pods-MovieApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieApp.release.xcconfig"; path = "Target Support Files/Pods-MovieApp/Pods-MovieApp.release.xcconfig"; sourceTree = "<group>"; };
-		9547D9C529EE752B0005BB30 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		95744D4D29EDCF96006A6DFB /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		95865D8429E5364A00101DE0 /* MovieApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95865D8729E5364A00101DE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +53,11 @@
 		95E44F5029ED8B9300348326 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
 		95E44F5129ED8B9300348326 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
 		95E44F5229ED8B9300348326 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		95FE8B7E29FE84410056B006 /* PeopleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleController.swift; sourceTree = "<group>"; };
+		95FE8B8029FE845C0056B006 /* PeopleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewModel.swift; sourceTree = "<group>"; };
+		95FE8B8429FE91BF0056B006 /* TopImageBottomLabelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopImageBottomLabelCell.swift; sourceTree = "<group>"; };
+		95FE8B8529FE91BF0056B006 /* TopImageBottomLabelCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopImageBottomLabelCell.xib; sourceTree = "<group>"; };
+		95FE8B8829FEA4BA0056B006 /* People.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
 		9BE10707709A2C16E6ECEFA3 /* Pods-MovieApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieApp.debug.xcconfig"; path = "Target Support Files/Pods-MovieApp/Pods-MovieApp.debug.xcconfig"; sourceTree = "<group>"; };
 		A2B98B5854E618187EAF9867 /* Pods_MovieApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -156,7 +164,6 @@
 			children = (
 				95BCC2B629E54B8500ED728D /* HomeController.swift */,
 				95744D4D29EDCF96006A6DFB /* CategoryCell.swift */,
-				9547D9C529EE752B0005BB30 /* MovieCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -175,6 +182,7 @@
 		95E44F4E29ED8B4200348326 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				95FE8B8229FE91500056B006 /* ReusableView */,
 				95B8426B29EEB9CE000DFE68 /* Extensions */,
 				95E44F4B29ED88C900348326 /* Fonts */,
 			);
@@ -185,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				95FE8B7C29FE7A9D0056B006 /* Home */,
+				95FE8B7D29FE83DA0056B006 /* People */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -193,10 +202,37 @@
 			isa = PBXGroup;
 			children = (
 				95BCC2B329E5397900ED728D /* Model */,
-				95BCC2B429E5398800ED728D /* ViewModel */,
 				95BCC2B529E539B500ED728D /* View */,
+				95BCC2B429E5398800ED728D /* ViewModel */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		95FE8B7D29FE83DA0056B006 /* People */ = {
+			isa = PBXGroup;
+			children = (
+				95FE8B8829FEA4BA0056B006 /* People.swift */,
+				95FE8B7E29FE84410056B006 /* PeopleController.swift */,
+				95FE8B8029FE845C0056B006 /* PeopleViewModel.swift */,
+			);
+			path = People;
+			sourceTree = "<group>";
+		};
+		95FE8B8229FE91500056B006 /* ReusableView */ = {
+			isa = PBXGroup;
+			children = (
+				95FE8B8329FE916B0056B006 /* Cell */,
+			);
+			path = ReusableView;
+			sourceTree = "<group>";
+		};
+		95FE8B8329FE916B0056B006 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				95FE8B8429FE91BF0056B006 /* TopImageBottomLabelCell.swift */,
+				95FE8B8529FE91BF0056B006 /* TopImageBottomLabelCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,6 +302,7 @@
 				95E44F5529ED8B9300348326 /* Poppins-Regular.ttf in Resources */,
 				95865D8F29E5364A00101DE0 /* Main.storyboard in Resources */,
 				95E44F5329ED8B9300348326 /* Poppins-Bold.ttf in Resources */,
+				95FE8B8729FE91BF0056B006 /* TopImageBottomLabelCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,13 +355,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95FE8B8129FE845C0056B006 /* PeopleViewModel.swift in Sources */,
 				95B8426A29EEB7E1000DFE68 /* UIImageView+Extension.swift in Sources */,
 				95B7183629E981980038E901 /* NetworkHelper.swift in Sources */,
+				95FE8B7F29FE84410056B006 /* PeopleController.swift in Sources */,
+				95FE8B8929FEA4BA0056B006 /* People.swift in Sources */,
 				95BCC2B729E54B8500ED728D /* HomeController.swift in Sources */,
-				9547D9C629EE752B0005BB30 /* MovieCell.swift in Sources */,
 				95BCC2B229E5392700ED728D /* NetworkManager.swift in Sources */,
 				95744D4E29EDCF96006A6DFB /* CategoryCell.swift in Sources */,
 				95865D8829E5364A00101DE0 /* AppDelegate.swift in Sources */,
+				95FE8B8629FE91BF0056B006 /* TopImageBottomLabelCell.swift in Sources */,
 				95BCC2B929E54BAC00ED728D /* HomeViewModel.swift in Sources */,
 				95E44F4A29ED4C5900348326 /* Movie.swift in Sources */,
 				95865D8A29E5364A00101DE0 /* SceneDelegate.swift in Sources */,

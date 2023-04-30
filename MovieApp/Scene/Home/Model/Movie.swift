@@ -8,7 +8,7 @@ import Foundation
 // MARK: - Movie
 struct Movie: Codable {
     let page: Int
-    let results: [Result]
+    let results: [MovieResult]
     let totalPages, totalResults: Int
 
     enum CodingKeys: String, CodingKey {
@@ -19,7 +19,15 @@ struct Movie: Codable {
 }
 
 // MARK: - Result
-struct Result: Codable {
+struct MovieResult: Codable, TopImageBottomLabelCellProtocol {
+    var cellImage: String {
+        return posterPath
+    }
+    
+    var cellTitle: String {
+        return title
+    }
+    
     let adult: Bool
     let backdropPath: String
     let genreIDS: [Int]
@@ -47,9 +55,3 @@ struct Result: Codable {
         case voteCount = "vote_count"
     }
 }
-
-//enum OriginalLanguage: String, Codable {
-//    case en = "en"
-//    case es = "es"
-//    case ko = "ko"
-//}

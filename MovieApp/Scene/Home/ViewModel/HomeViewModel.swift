@@ -9,7 +9,6 @@ import Foundation
 
 class HomeViewModel {
     
-    // var movieList: [Result] = [Result]()
     var categoryList: [Category] = [Category]()
     var successCallback: (() -> Void)?
     

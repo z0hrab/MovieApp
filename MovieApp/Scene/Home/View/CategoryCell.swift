@@ -14,7 +14,8 @@ class CategoryCell: UICollectionViewCell {
     let cellID = "\(TopImageBottomLabelCell.self)"
     var movieList: [MovieResult] = [MovieResult]()
     
-    override func layoutSubviews() {
+    
+    func configUI() {
         let nibCell = UINib(nibName: self.cellID, bundle: nil)
         self.movieCollection.register(nibCell, forCellWithReuseIdentifier: self.cellID)
     }

@@ -42,6 +42,7 @@ extension HomeController: UICollectionViewDelegate, UICollectionViewDataSource, 
         // cell.movieList.append(contentsOf: self.homeViewModel.movieList)
         cell.categoryNameTitle.text = self.homeViewModel.categoryList[indexPath.item].categoryName
         cell.movieList.append(contentsOf: self.homeViewModel.categoryList[indexPath.item].movieList)
+        cell.configUI()
         cell.movieCollection.reloadData()
         return cell
     }

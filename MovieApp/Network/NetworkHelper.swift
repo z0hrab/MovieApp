@@ -7,6 +7,8 @@
 
 import Foundation
 
+// Mahammad test comment yaziram oz proyektimde, pull request olaraq gelecek sene.
+
 class NetworkHelper {
     static let shared = NetworkHelper()
     let baseURL = "https://api.themoviedb.org/3/"

@@ -19,9 +19,9 @@ class HomeController: UIViewController {
     }
     
     func configHomeController() {
-        self.homeViewModel.getPopularMovies()
-        self.homeViewModel.getTopRatedMovies()
-        self.homeViewModel.getUpcomingMovies()
+        self.homeViewModel.getItems(category: .popular)
+        self.homeViewModel.getItems(category: .topRated)
+        self.homeViewModel.getItems(category: .upcomming)
         
         self.homeViewModel.successCallback = {
             self.categoryCollection.reloadData() // will reload the categoryCollection view
@@ -39,9 +39,10 @@ extension HomeController: UICollectionViewDelegate, UICollectionViewDataSource, 
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CategoryCell", for: indexPath) as! CategoryCell
-        // cell.movieList.append(contentsOf: self.homeViewModel.movieList)
+        
         cell.categoryNameTitle.text = self.homeViewModel.categoryList[indexPath.item].categoryName
         cell.movieList.append(contentsOf: self.homeViewModel.categoryList[indexPath.item].movieList)
+        
         cell.configUI()
         cell.movieCollection.reloadData()
         return cell

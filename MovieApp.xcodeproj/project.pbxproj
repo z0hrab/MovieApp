@@ -24,6 +24,8 @@
 		95E44F5429ED8B9300348326 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95E44F5029ED8B9300348326 /* Poppins-SemiBold.ttf */; };
 		95E44F5529ED8B9300348326 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95E44F5129ED8B9300348326 /* Poppins-Regular.ttf */; };
 		95E44F5629ED8B9300348326 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95E44F5229ED8B9300348326 /* Poppins-Medium.ttf */; };
+		95F4DE4D2A011FD000DAF7BA /* HomeNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F4DE4C2A011FD000DAF7BA /* HomeNetworkManager.swift */; };
+		95F4DE4F2A01204600DAF7BA /* HomeNetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F4DE4E2A01204600DAF7BA /* HomeNetworkHelper.swift */; };
 		95FE8B7F29FE84410056B006 /* PeopleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FE8B7E29FE84410056B006 /* PeopleController.swift */; };
 		95FE8B8129FE845C0056B006 /* PeopleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FE8B8029FE845C0056B006 /* PeopleViewModel.swift */; };
 		95FE8B8629FE91BF0056B006 /* TopImageBottomLabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FE8B8429FE91BF0056B006 /* TopImageBottomLabelCell.swift */; };
@@ -53,6 +55,8 @@
 		95E44F5029ED8B9300348326 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
 		95E44F5129ED8B9300348326 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
 		95E44F5229ED8B9300348326 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		95F4DE4C2A011FD000DAF7BA /* HomeNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNetworkManager.swift; sourceTree = "<group>"; };
+		95F4DE4E2A01204600DAF7BA /* HomeNetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNetworkHelper.swift; sourceTree = "<group>"; };
 		95FE8B7E29FE84410056B006 /* PeopleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleController.swift; sourceTree = "<group>"; };
 		95FE8B8029FE845C0056B006 /* PeopleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewModel.swift; sourceTree = "<group>"; };
 		95FE8B8429FE91BF0056B006 /* TopImageBottomLabelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopImageBottomLabelCell.swift; sourceTree = "<group>"; };
@@ -136,8 +140,8 @@
 		95BCC2B029E538FE00ED728D /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				95BCC2B129E5392700ED728D /* NetworkManager.swift */,
-				95B7183529E981980038E901 /* NetworkHelper.swift */,
+				95F4DE4A2A011F7C00DAF7BA /* Core */,
+				95F4DE4B2A011F8900DAF7BA /* HomeNetworkManager */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -187,6 +191,24 @@
 				95E44F4B29ED88C900348326 /* Fonts */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		95F4DE4A2A011F7C00DAF7BA /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				95BCC2B129E5392700ED728D /* NetworkManager.swift */,
+				95B7183529E981980038E901 /* NetworkHelper.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		95F4DE4B2A011F8900DAF7BA /* HomeNetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				95F4DE4C2A011FD000DAF7BA /* HomeNetworkManager.swift */,
+				95F4DE4E2A01204600DAF7BA /* HomeNetworkHelper.swift */,
+			);
+			path = HomeNetworkManager;
 			sourceTree = "<group>";
 		};
 		95FE8B7B29FE7A550056B006 /* Scene */ = {
@@ -380,9 +402,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				95FE8B8129FE845C0056B006 /* PeopleViewModel.swift in Sources */,
+				95F4DE4D2A011FD000DAF7BA /* HomeNetworkManager.swift in Sources */,
 				95B8426A29EEB7E1000DFE68 /* UIImageView+Extension.swift in Sources */,
 				95B7183629E981980038E901 /* NetworkHelper.swift in Sources */,
 				95FE8B7F29FE84410056B006 /* PeopleController.swift in Sources */,
+				95F4DE4F2A01204600DAF7BA /* HomeNetworkHelper.swift in Sources */,
 				95FE8B8929FEA4BA0056B006 /* People.swift in Sources */,
 				95BCC2B729E54B8500ED728D /* HomeController.swift in Sources */,
 				95BCC2B229E5392700ED728D /* NetworkManager.swift in Sources */,
